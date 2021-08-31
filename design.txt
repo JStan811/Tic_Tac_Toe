@@ -1,0 +1,70 @@
+This document is for planning out the program.
+
+Notes from instructions
+  - Involves (all the conditions that make it a fun little problem to solve using OOP):
+    a couple of players
+    a simple board
+    checking for victory in a game loops
+
+1. Think about how you would set up the different elements within the game… What should be a class? Instance variable? Method? A few minutes of thought can save you from wasting an hour of coding.
+  What are the different elements within the game? Board, turn, player, win/loss, tie, X, O
+  What are classes and their methods?
+    - Board:
+      take an X or take an O / change configuration,
+      reset,
+      show itself?
+    - Player:
+      Make a play / place X or O
+    - GameMaster:
+      Give out / declare win/loss or tie (player A won, player B won, tie, or go to another turn)
+
+Let's start by designing the board:
+
+v1
+
+  1 2 3
+A|_|_|_|
+B|_|_|_|
+C|_|_|_|
+
+v2
+  __ __ __
+A|__|__|__|
+B|__|__|__|
+C|__|__|__|
+  1  2  3
+
+v3
+   ______ ______ ______
+  |      |      |      |
+ A|      |      |      |
+  |______|______|______|
+  |      |      |      |
+ B|      |      |      |
+  |______|______|______|
+  |      |      |      |
+ C|      |      |      |
+  |______|______|______|
+     1      2      3
+
+   ______ ______ ______
+  |      |      |      |
+ A|  X   |  O   |  X   |
+  |______|______|______|
+  |      |      |      |
+ B|  O   |  O   |  X   |
+  |______|______|______|
+  |      |      |      |
+ C|      |      |  X   |
+  |______|______|______|
+     1      2      3
+
+This is how I think a turn will work
+1. determine player
+2. display board
+3. get player input
+4. update board
+5. check for win or tie
+  a. if win, declare winner and exit
+  b. if tie, declare tie and exit
+  c. else, continue to next turn

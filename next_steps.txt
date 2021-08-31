@@ -1,0 +1,12 @@
+Next steps:
+  - Figure out the display (see board_design.rb)
+    - Complete
+  - code tie conditions (add a "tie?" check after the "win?" check in the game loop)
+    - Complete
+  - error handling ("Invalid cell...", "Cell already has value in it...", etc.)
+    - Complete
+
+Potential features:
+ - score keeper
+ - clean up/shorten/split up methods in Game class
+ - add "New Game?" once game finishes
