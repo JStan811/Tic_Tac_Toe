@@ -52,8 +52,6 @@ class Board
     !(@state.value? ' ')
   end
 
-  private
-
   def win_per_type?(type)
     answer = false
 
